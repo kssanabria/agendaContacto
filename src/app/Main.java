@@ -113,7 +113,17 @@ public class Main {
 	}
 
 	public static void eliminarContacto() {
-			
+		System.out.println("Nommbre de la persona que quieres eliminar");
+		String nombre = null;
+		Iterator<Contacto> it = listaContactos.iterator();
+		while (it.hasNext()) {
+			Contacto contacto =it.next();
+			if(contacto.getNombre()==nombre) {
+				it.remove();
+			}
+		}
+		
+		
 	}
 
 	public static void modificarContacto() {
