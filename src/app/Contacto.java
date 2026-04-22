@@ -29,6 +29,9 @@ public class Contacto {
 	}
 	public void setCorreo(String correo) {
 		this.correo = correo;
-	}
+	}@Override
+	public String toString() {
+		return "======"+nombre+"======\n \t Teléfono: "+telefono+ "\n \t Correo: "+correo+"==============";
+ 	}
 
 }
